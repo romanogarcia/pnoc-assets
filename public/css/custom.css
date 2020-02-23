@@ -1,0 +1,179 @@
+.auth .brand-logo img{
+    width: 80px;
+    height: 100px;
+}
+
+#search-btn_submit{
+    position: relative;
+    z-index: 9;
+}
+.custom-datatables-proccessing-loader{
+    position: fixed; 
+    top: 0px; 
+    bottom: 0px; 
+    left: 0px; 
+    right: 0px;
+    background: rgba(255, 255, 255, 0.5); 
+    text-align: center;
+    padding-top: 300px;
+    z-index: 1;
+}
+.custom-datatables-proccessing-loader .dpl-loading-label{
+    font-size: 30px;
+    padding: 10px;
+    background: #FFFFFF;
+}
+.datatables-custom-loader .custom-select{
+    background: none !important;
+}
+
+
+/* PRINT LAYOUT */
+.print-preview_container_global_enc .paper-page{
+    /* margin: 20px;  */
+    overflow: hidden; 
+    text-align: center;
+    border: 1px solid #333333;
+    width: 270px;
+    height: 75px;
+    display: inline-block;
+}
+.print-preview_container_global_enc .paper-page.print-preview_container_global_enc_input{
+    height: 145px !important;
+}
+
+.print-preview_container_global_enc .paper-page img{
+    margin-top: 20px;
+}
+.print-preview_container_global_enc .paper-page-default img{
+    margin-top: 10px !important;
+}
+
+.print-preview_container_global_enc .btn-print{
+    cursor: pointer;
+    padding: 16px 25px;
+    text-align: center;
+    background: #2A86FF;
+    border: 1px solid #2A86FF;
+    outline: none;
+    transition: 0.2s;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.print-preview_container_global_enc .btn-back{
+    background: #FF3228;
+    border: 1px solid #FF3228;
+}
+.print-preview_container_global_enc .btn-print:hover{
+    opacity: 0.5;
+}
+.print-preview_container_global_enc .barcode-logo{
+    height: 40px;
+    width: 35px;
+}
+.print-preview_container_global_enc .barcode-number{
+    margin-left: 20px;
+}
+.print-preview_container_global_enc .barcode-input{
+    height: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.print-preview_container_global_enc .barcode-input.barcode-input-default{
+    margin-top: 40px;
+}
+.print-preview_container_global_enc .print-preview_container_global_enc_input{
+    padding: 5px;
+    padding-top: 10px;
+}
+.print-preview_container_global_enc .paper-page .layout-sm-6{
+    background: transparent; 
+    padding: 2px; 
+    margin: 2px; 
+    margin-left: 4px; 
+    float: left; 
+    height: 44.5%; 
+    width: 80px;
+}
+.print-preview_container_global_enc .paper-page .layout-sm-6 .barcode-logo, 
+.print-preview_container_global_enc .paper-page .layout-sm-4-l .barcode-logo, 
+.print-preview_container_global_enc .paper-page .layout-sm-4-r .barcode-logo{
+    height: 17px; 
+    width: 14px; 
+    margin-top: -1px;
+}
+.print-preview_container_global_enc .paper-page .layout-sm-6 .barcode-number,
+.print-preview_container_global_enc .paper-page .layout-sm-4-r .barcode-number,
+.print-preview_container_global_enc .paper-page .layout-sm-4-l .barcode-number{
+    font-size: 5px;
+}
+.print-preview_container_global_enc .paper-page .layout-sm-6 .barcode, 
+.print-preview_container_global_enc .paper-page .layout-sm-4-r .barcode{
+    height: 15px; 
+    width: 45px; 
+    margin-top: -1px;
+}
+.print-preview_container_global_enc .paper-page .layout-sm-4-l{
+    background: transparent; 
+    padding: 2px; 
+    margin: 2px; 
+    margin-left: 4px; 
+    float: left; 
+    height: 44.5%; 
+    width: 140px;
+}
+.print-preview_container_global_enc .paper-page .layout-sm-4-l .barcode{
+    height: 17px; 
+    width: 100px; 
+    margin-top: 0px;    
+}
+
+.print-preview_container_global_enc .paper-page .layout-sm-4-r{
+    background: transparent; 
+    padding: 2px; 
+    margin: 2px; 
+    margin-left: 4px; 
+    float: left; 
+    height: 44.5%; 
+    width: 80px;
+}
+.print-report-container{
+    margin: 20px !important;
+    padding: 5px !important;
+    overflow: hidden;
+}
+.print-table-report td, 
+.print-table-report th{
+    padding: 2px;
+}
+@media print {
+    .no-print{
+        display: none;
+        width: 100%;
+    }
+    .print-preview_container_global_enc .paper-page{
+        border: 1px solid transparent !important;
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .print-preview_container_global_enc .paper-page .img{
+        margin-top: 20%;
+    }
+    .print-preview_container_global_enc .paper-page .layout-sm-6 .barcode-number, 
+    .print-preview_container_global_enc .paper-page .layout-sm-4-l .barcode-number,
+    .print-preview_container_global_enc .paper-page .layout-sm-4-r .barcode-number{
+        font-size: 9px;
+    }
+    .print-preview_container_global_enc .paper-page .layout-sm-6 .barcode, 
+    .print-preview_container_global_enc .paper-page .layout-sm-4-r .barcode{
+        width: 60px;
+        height: 15px;
+    }
+    @page { 
+        /* size: 3.14in 1.77in;    new is 4x1 */
+        margin: 0mm; 
+    }
+}
